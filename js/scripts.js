@@ -39,11 +39,13 @@ function decToRom(number) {
   return newArray.join('');
 };
 
-// function edgeCase(string) {
-//   const value = string.replace(/CCCC/,'CD')
-//   value = value.replace(/LLLL/,'LC')
+function edgeCase(string) {
+  const edgeCandidates = [[/CCCC/, 'DC'], [/LLLL/, 'CD'], [/XXXX/, "LX"], [/VVVV/, "XV"], [/IIII/, "IV"]];
+  let newString = string
+  for (i = 0; i < edgeCandidates.length; i++){
+    newString = newString.replace(edgeCandidates[i][0], edgeCandidates[i][1])
+  }
+  return newString
+}
 
-//   return value
-// }
-
-console.log(decToRom(2902))
+console.log(edgeCase(decToRom(2902)))
