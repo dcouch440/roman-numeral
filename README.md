@@ -1,6 +1,6 @@
 # Roman Numeral
-#### *Co-Created By:* 
-#### *Co-Created By:* David Couch
+#### *Co-Created By: Jonah Johansen* 
+#### *Co-Created By: David Couch*
 #### *Convert Base 10 Counting Into Roman Numeral* 
 
 * * *
