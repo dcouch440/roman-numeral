@@ -11,12 +11,9 @@ This app is designed to convert your favorite base 10 number clusters into a won
 * * *
 ## Specs
 Describe: `decToRom()`
-Test: "Takes in an integer and returns the value of its roman numeral counterpart without subtractive notation"
-expect(decToRom(2902).toEqual("MMDCCCCII"))
+Test: "Takes in an integer and returns the value of its roman numeral counterpart"
+expect(decToRom(2902).toEqual("MMCMII"))
 
-Describe: `edgeCase()`
-Test: "Takes in a previously converted roman numeral string without subtractive notation and converts it into a proper syntax"
-expect(edgeCase("MMDCCCCII").toEqual("MMDDCII"))
 
 * * *
 
